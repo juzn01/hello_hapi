@@ -5,7 +5,8 @@ pipeline {
     agent {
         docker {
             image 'node'
-            args '-u jenkins'
+            #args '-u jenkins'
+            args '-u dockremap'
         }
     }
 
