@@ -5,7 +5,7 @@ pipeline {
     agent {
         docker {
             image 'node'
-            args '-uid 1000'
+            args '-u localadm'
         }
     }
 
