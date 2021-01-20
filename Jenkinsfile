@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                sh 'chmod 777 package-lock.json'
                 sh 'npm install'
             }
         }
